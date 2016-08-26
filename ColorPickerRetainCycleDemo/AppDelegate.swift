@@ -13,11 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-
+    
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
-//    let rootVC: ViewController = ViewController()
-    let rootVC: DemoTableViewController = DemoTableViewController()
+    // ---------------------------------------------------------------- //
+    // Notes: Comment out either line defining rootVC to test with either a UIButton in a UIViewController or
+    //        a UITableViewController, respectively
+    // ---------------------------------------------------------------- //
+    
+    let rootVC: ViewController = ViewController()
+//    let rootVC: DemoTableViewController = DemoTableViewController()
     let navVC: UINavigationController = UINavigationController(rootViewController: rootVC)
     self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
     self.window?.rootViewController = navVC

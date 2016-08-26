@@ -31,11 +31,21 @@ class ViewController: UIViewController {
     }
     
     internal func pushToColorPickerVC(sender: AnyObject?) {
-        // MARK: change true/false here
-        let dtvc = ColorPickerViewController(usingUpdatedDelegation: true)
+        // ---------------------------------------------------------------- //
+        // Notes: change true/false here
+        //     true: uses proposed changes
+        //     false: uses existing library
+        // ---------------------------------------------------------------- //
+    
+        let dtvc = ColorPickerViewController(usingUpdatedDelegation: false)
         self.navigationController?.pushViewController(dtvc, animated: true)
     }
 }
+
+
+// ---------------------------------------------------------------- //
+// ---------------------------------------------------------------- //
+// ---------------------------------------------------------------- //
 
 
 // MARK: - Demo Table View
@@ -65,12 +75,21 @@ internal class DemoTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // MARK: change true/false here
+        // ---------------------------------------------------------------- //
+        // Notes: change true/false here
+        //     true: uses proposed changes
+        //     false: uses existing library
+        // ---------------------------------------------------------------- //
+        
         let dtvc = ColorPickerViewController(usingUpdatedDelegation: true)
         self.navigationController?.pushViewController(dtvc, animated: true)
     }
 }
 
+
+// ---------------------------------------------------------------- //
+// ---------------------------------------------------------------- //
+// ---------------------------------------------------------------- //
 
 
 // MARK - Demo Color Picker View Controller
