@@ -9,9 +9,13 @@ Simple demo app to illustrate a memory issue with [SwiftHSVColorPicker](https://
   
 ### Screenshots of results:
 [Delegation changes applied, TableVC](http://i.imgur.com/EiVkpgx.png)
+
 [Delegation changes applied, ViewController](http://i.imgur.com/7A4O2lm.png)
+
 [Current library, ViewController](http://i.imgur.com/15qMShL.png)
+
 [Current library, TableVC](http://i.imgur.com/1zCKjzv.png)
+
 
 ### Other: 
 Even with the changes, there appears to be one other small instance of memory being retained that only occurs after the first view controller push when using either the `UIViewController` or the `UITableViewController`. It also happens somewhat randomly during following push/pops but only results in an uptick of about 0.1-0.2 MiB. I tried subbing out the usage of `CGImageRef` with `UIImage` but does not seem to allieviate the issue. Futher investigation is needed. 
