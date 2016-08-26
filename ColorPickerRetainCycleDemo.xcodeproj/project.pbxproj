@@ -17,6 +17,9 @@
 		14177B461D6FE28300E77FDC /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14177B411D6FE28300E77FDC /* ColorWheel.swift */; };
 		14177B471D6FE28300E77FDC /* SelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14177B421D6FE28300E77FDC /* SelectedColorView.swift */; };
 		14177B481D6FE28300E77FDC /* SwiftHSVColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14177B431D6FE28300E77FDC /* SwiftHSVColorPicker.swift */; };
+		148D95B91D70E1CC004BF221 /* CatColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D95B81D70E1CC004BF221 /* CatColorWheel.swift */; };
+		148D95BB1D70E1E2004BF221 /* CatBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D95BA1D70E1E2004BF221 /* CatBrightnessView.swift */; };
+		148D95BD1D70E1F8004BF221 /* CatSwiftHSVColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148D95BC1D70E1F8004BF221 /* CatSwiftHSVColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		14177B411D6FE28300E77FDC /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
 		14177B421D6FE28300E77FDC /* SelectedColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedColorView.swift; sourceTree = "<group>"; };
 		14177B431D6FE28300E77FDC /* SwiftHSVColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftHSVColorPicker.swift; sourceTree = "<group>"; };
+		148D95B81D70E1CC004BF221 /* CatColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatColorWheel.swift; path = Updated/CatColorWheel.swift; sourceTree = "<group>"; };
+		148D95BA1D70E1E2004BF221 /* CatBrightnessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatBrightnessView.swift; path = Updated/CatBrightnessView.swift; sourceTree = "<group>"; };
+		148D95BC1D70E1F8004BF221 /* CatSwiftHSVColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CatSwiftHSVColorPicker.swift; path = Updated/CatSwiftHSVColorPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +57,9 @@
 				14177B2B1D6FE25A00E77FDC /* ColorPickerRetainCycleDemo */,
 				14177B2A1D6FE25A00E77FDC /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		14177B2A1D6FE25A00E77FDC /* Products */ = {
 			isa = PBXGroup;
@@ -64,6 +72,7 @@
 		14177B2B1D6FE25A00E77FDC /* ColorPickerRetainCycleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				148D95B71D70E12A004BF221 /* Updated SwiftHSVColorPicker */,
 				14177B3E1D6FE28300E77FDC /* SwiftHSVColorPicker */,
 				14177B2C1D6FE25A00E77FDC /* AppDelegate.swift */,
 				14177B2E1D6FE25A00E77FDC /* ViewController.swift */,
@@ -86,6 +95,16 @@
 			);
 			name = SwiftHSVColorPicker;
 			path = Source;
+			sourceTree = "<group>";
+		};
+		148D95B71D70E12A004BF221 /* Updated SwiftHSVColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				148D95B81D70E1CC004BF221 /* CatColorWheel.swift */,
+				148D95BA1D70E1E2004BF221 /* CatBrightnessView.swift */,
+				148D95BC1D70E1F8004BF221 /* CatSwiftHSVColorPicker.swift */,
+			);
+			name = "Updated SwiftHSVColorPicker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148D95BD1D70E1F8004BF221 /* CatSwiftHSVColorPicker.swift in Sources */,
 				14177B481D6FE28300E77FDC /* SwiftHSVColorPicker.swift in Sources */,
 				14177B2F1D6FE25A00E77FDC /* ViewController.swift in Sources */,
+				148D95B91D70E1CC004BF221 /* CatColorWheel.swift in Sources */,
+				148D95BB1D70E1E2004BF221 /* CatBrightnessView.swift in Sources */,
 				14177B2D1D6FE25A00E77FDC /* AppDelegate.swift in Sources */,
 				14177B441D6FE28300E77FDC /* BrightnessView.swift in Sources */,
 				14177B471D6FE28300E77FDC /* SelectedColorView.swift in Sources */,
@@ -315,6 +337,7 @@
 				14177B3D1D6FE25A00E77FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

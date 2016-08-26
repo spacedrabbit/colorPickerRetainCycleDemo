@@ -9,7 +9,7 @@ import UIKit
 
 class SelectedColorView: UIView {
     var color: UIColor!
-    
+  
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
